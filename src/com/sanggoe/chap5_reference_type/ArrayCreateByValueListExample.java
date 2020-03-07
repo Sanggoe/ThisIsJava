@@ -5,7 +5,7 @@ public class ArrayCreateByValueListExample {
         int[] scores;
         scores = new int[]{83, 90, 87};
         int sum1 = 0;
-        for (int i : scores) {
+        for (int i : scores) {  // 향상된 for문 사용
             sum1 += i;
         }
         System.out.println("Total : " + sum1);
@@ -17,10 +17,9 @@ public class ArrayCreateByValueListExample {
 
     public static int add(int[] scores) {
         int sum = 0;
-        for (int i : scores) {
+        for (int i : scores) {  // 향상된 for문 사용
             sum += i;
         }
         return sum;
     }
-
 }
